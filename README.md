@@ -1,0 +1,3 @@
+# Core Data Asynchronous Save Crash in Objective-C
+
+This repository demonstrates a common issue in Objective-C Core Data development: crashes or data corruption caused by attempting to save a managed object context directly on a background thread.  The example shows how to reproduce the problem and provides a solution using performBlockAndWait or NSManagedObjectContext's concurrency features to resolve the issue. The `bug.m` file contains the erroneous code, while `bugSolution.m` presents the correct approach using proper thread handling and synchronization techniques for saving the context.
